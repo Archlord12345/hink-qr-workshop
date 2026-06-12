@@ -1,10 +1,6 @@
 # Hink QR — Code applicatif (atelier serverless)
 
 Générateur de QR Codes : front React + API Lambda.
-
-> Ce dépôt contient **uniquement le code applicatif**.  
-> L'infrastructure AWS (`template.yaml`) n'est **pas fournie** — c'est à vous de la créer pendant l'atelier, en vous appuyant sur la présentation.
-
 ---
 
 ## Contenu du repo
@@ -48,21 +44,6 @@ aws sts get-caller-identity
 
 ---
 
-## Parcours de l'atelier
-
-1. **Lire** `docs/PRESENTATION.md` — architecture, SAM, `template.yaml`
-2. **Explorer** le code dans `api/` et `frontend/`
-3. **Créer** `template.yaml` à la racine du projet
-4. **Déployer** : `sam build` → `sam deploy --guided`
-5. **Builder** le front avec `VITE_API_URL` (output `ApiUrl`)
-6. **Publier** : `aws s3 sync` + invalidation CloudFront
-7. **Tester** l'application
-8. **Nettoyer** : `sam delete`
-
-Les commandes détaillées et la structure du `template.yaml` sont dans la présentation.
-
----
-
 ## Développement local (optionnel)
 
 **Terminal 1 — API :**
@@ -100,6 +81,4 @@ Réponse : `{ "status": "ok" }`
 ---
 
 ## Ressources
-
-- Présentation complète : [`docs/PRESENTATION.md`](docs/PRESENTATION.md)
 - [AWS SAM Developer Guide](https://docs.aws.amazon.com/serverless-application-model/)
