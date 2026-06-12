@@ -1,0 +1,23 @@
+# Dépendances
+node_modules/
+
+# Build frontend
+frontend/dist/
+
+# Artéfacts SAM (générés par sam build)
+.aws-sam/
+
+# Config de déploiement personnelle (générée par sam deploy --guided)
+samconfig.toml
+
+# Variables d'environnement locales
+.env
+.env.local
+.env.*.local
+
+# OS / éditeur
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
